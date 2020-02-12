@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "idProduct": 0,
+            "name": "Macbook Pro 13\"",
+            "price": 1.99,
+            "type": "computer"
+        },
+        {
+            "idProduct": 1,
+            "name": "Test nom",
+            "price": 22,
+            "type": "test type"
+        },
+        {
+            "idProduct": 2,
+            "name": "Autre test\"",
+            "price": 332,
+            "type": "feu"
+        },
+        {
+            "idProduct": 3,
+            "name": "pokémon puissant",
+            "price": 9999999,
+            "type": "dragon/eau/feu"
+        }
+    ]
+}
