@@ -6,15 +6,8 @@ var db = new JsonDB(new Config("products", true, true, '/'));
 
 // POST : create a product
 // Post the body of the request to the product database
+// The body is defined by the frontend
 exports.createProduct = (req, res, next) => {
-
-    // Reject request if the body has a property idProduct
-    if (req.body.hasOwnProperty('idProduct')) {
-        res.status(400).json({ type: 'error', message: 'body has property "idProduct"' });
-    }
-
-    // Get the body of the request
-    const { name, price, type } = req.body;
 
     try {
         var products = db.getData('/products');
@@ -24,18 +17,11 @@ exports.createProduct = (req, res, next) => {
 
     // The next product id is the max existing value + 1
     var idNewProduct = products.length ? products[0].idProduct + 1 : 0;
-    console.log('avant : ', idNewProduct);
     products.forEach(product => {
         idNewProduct = product.idProduct >= idNewProduct ? product.idProduct + 1 : idNewProduct;
-        console.log('Apres: ', idNewProduct, ', product : ', product);
     });
 
-    const newProduct = {
-        idProduct: idNewProduct,
-        name,
-        price,
-        type
-    };
+    const newProduct = { ...req.body, idProduct: idNewProduct };
 
     db.push('/products[]', newProduct);
 
