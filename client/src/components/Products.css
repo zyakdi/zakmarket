@@ -1,4 +1,15 @@
-.products {
+.productsContainer {
     display: flex;
-    flex-direction: row;
+    width: 80%;
+    /* background-color: blue; */
+    margin: auto;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.createProductBtn {
+    text-align: center;
 }

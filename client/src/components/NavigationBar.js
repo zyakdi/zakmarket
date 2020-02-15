@@ -16,6 +16,7 @@ class NavigationBar extends Component {
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="/products">Products</Nav.Link>
+                            <Nav.Link href="/createProduct">Create a product</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

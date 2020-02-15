@@ -4,25 +4,41 @@
             "idProduct": 0,
             "name": "Macbook Pro 13\"",
             "price": 1.99,
-            "type": "computer"
+            "type": "computer",
+            "size": "13 inches"
         },
         {
             "idProduct": 1,
-            "name": "Test nom",
-            "price": 22,
-            "type": "test type"
+            "name": "Hey bro",
+            "price": 22234456,
+            "type": "test type",
+            "wesh": 45,
+            "etc": "salut"
         },
         {
             "idProduct": 2,
-            "name": "Autre test\"",
-            "price": 332,
-            "type": "feu"
+            "name": "Skateboard creature",
+            "price": 80,
+            "type": "Skateboard",
+            "details": "Damaged grip tape, spitfire wheels"
         },
         {
             "idProduct": 3,
-            "name": "pokémon puissant",
+            "name": "dracaufeu",
             "price": 9999999,
-            "type": "dragon/eau/feu"
+            "type": "Pokémon",
+            "prop1": "22222222222222222222222222222222222222222222222222",
+            "p2": "rr",
+            "p3": "33",
+            "pq": "pcq",
+            "details": "Dracaufeu niveau 100 EV max"
+        },
+        {
+            "name": "R",
+            "price": 45,
+            "type": "tqt",
+            "details": "jdshbvr475y465jgfv",
+            "idProduct": 4
         }
     ]
 }

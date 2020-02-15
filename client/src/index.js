@@ -2,18 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import history from './history';
 
 import App from './components/App';
 import Products from './components/Products';
+import CreateProductForm from './components/CreateProductForm';
+import UpdateProductForm from './components/UpdateProductForm';
 
 ReactDOM.render(
-    // history of the props = the imported history from history.js
-    <Router>
+    <Router history={history}>
         <Switch>
             <Route exact path='/' component={App} />
             <Route path='/products' component={Products} />
+            <Route path='/createProduct' component={CreateProductForm} />
+            <Route path='/updateProduct' component={UpdateProductForm} />
         </Switch>
     </Router>,
     document.getElementById('root')
