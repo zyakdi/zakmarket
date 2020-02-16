@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './NavigationBar.css';
 
 
 class NavigationBar extends Component {
@@ -9,7 +10,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <div className="navigationBar">
-                <Navbar bg="light" expand="lg">
+                <Navbar expand="lg" variant="dark">
                     <Navbar.Brand href="/">Zak-Market</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

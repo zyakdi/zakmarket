@@ -40,7 +40,7 @@ class Product extends Component {
         const { product } = this.props;
         return (
             <Card>
-                <Card.Header>{this.toFirstLetterUpperCase(product.type)}</Card.Header>
+                <Card.Header className='productDesign'>{product.type.toUpperCase()}</Card.Header>
                 <Card.Body>
                     <Card.Title>{this.toFirstLetterUpperCase(product.name)}</Card.Title>
                     <Card.Subtitle>{product.price}</Card.Subtitle>
@@ -48,7 +48,7 @@ class Product extends Component {
                         {this.productDetails}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer>
+                <Card.Footer className='productDesign'>
                     <div className="cardFooter">
                         <div className="footerBtn">
                             <Link to={{ pathname: '/updateProduct', state: { product } }}>

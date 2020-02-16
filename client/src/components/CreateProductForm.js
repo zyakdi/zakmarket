@@ -73,7 +73,9 @@ class CreateProductForm extends Component {
                 <NavigationBar />
                 <div className="formContainer">
                     <br />
-                    <h2>Create product</h2>
+                    <br />
+                    <br />
+                    <h2>Create a new product</h2>
                     <br />
                     <Form>
                         <Form.Group as={Row} className="gr">

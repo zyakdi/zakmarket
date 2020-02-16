@@ -44,12 +44,12 @@ class Products extends Component {
                 <NavigationBar />
                 <br />
                 <Link to='/createProduct'>
-                    <div className="createProductBtn">
-                        <Button variant="success">Create a new product</Button>
+                    <div className="createProductDiv">
+                        <Button className="createProductBtn">Create a new product</Button>
                     </div>
                 </Link>
-                <br/>
-                <h2>These are our products</h2>
+                <br />
+                <h2>Our products</h2>
                 <br />
                 <div className="productsContainer">
                     <CardDeck>

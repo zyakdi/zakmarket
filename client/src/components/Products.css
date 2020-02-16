@@ -4,12 +4,21 @@
     /* background-color: blue; */
     margin: auto;
     justify-content: center;
+    flex-flow: row wrap;
+}
+
+.flexItem {
+    /* flex: 1 1 calc(100% / 4 - 0.4em); */
 }
 
 h2 {
     text-align: center;
 }
 
-.createProductBtn {
+.createProductDiv {
     text-align: center;
 }
+.createProductBtn {
+    background-color: rgb(51, 99, 51);
+    border: none;
+  }

@@ -13,7 +13,8 @@
             "price": 22234456,
             "type": "test type",
             "wesh": 45,
-            "etc": "salut"
+            "etc": "salut",
+            "details": "yes papa les détails"
         },
         {
             "idProduct": 2,
@@ -39,6 +40,52 @@
             "type": "tqt",
             "details": "jdshbvr475y465jgfv",
             "idProduct": 4
+        },
+        {
+            "name": "usb stick",
+            "price": 34,
+            "type": "223354364",
+            "details": "izi",
+            "idProduct": 5
+        },
+        {
+            "name": "a",
+            "price": 5,
+            "type": "a",
+            "details": "etr",
+            "idProduct": 6
+        },
+        {
+            "idProduct": 7,
+            "name": "dracaufeu",
+            "price": 9999999,
+            "type": "Pokémon",
+            "prop1": "22222222222222222222222222222222222222222222222222",
+            "p2": "rr",
+            "p3": "33",
+            "pq": "pcq",
+            "details": "Dracaufeu niveau 100 EV max"
+        },
+        {
+            "name": "R",
+            "price": 45,
+            "type": "tqt",
+            "details": "jdshbvr475y465jgfv",
+            "idProduct": 8
+        },
+        {
+            "name": "usb stick",
+            "price": 34,
+            "type": "223354364",
+            "details": "izi",
+            "idProduct": 9
+        },
+        {
+            "name": "a",
+            "price": 5,
+            "type": "a",
+            "details": "etr",
+            "idProduct": 10
         }
     ]
 }

@@ -1,6 +1,32 @@
+h1 {
+  font-size: 500%;
+}
+
 .home {
   text-align: center;
   display: flex;
   flex-direction: column;
+  width: 40%;
+  margin: auto;
 }
 
+.cardHeader {
+  background-color: rgb(51, 99, 51);;
+  font-size: 140%;
+  font-weight: bold;
+  color: white;
+}
+
+.homeCard {
+  width: 60%;
+  margin: auto;
+}
+
+.cardText {
+  text-align: justify;
+}
+
+.homeBtn {
+  background-color: rgb(51, 99, 51);
+  border: none;
+}
