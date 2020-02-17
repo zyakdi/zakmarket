@@ -55,9 +55,8 @@ class Products extends Component {
                     {
                         this.state.products.map((product) => {
                             return (
-                                <div className="flexItem">
+                                <div className="flexItem" key={product.idProduct}>
                                     <Product
-                                        key={product.idProduct}
                                         product={product}
                                         handleDelete={this.handleDelete}
                                     />

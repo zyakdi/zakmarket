@@ -30,3 +30,8 @@ h1 {
   background-color: rgb(51, 99, 51);
   border: none;
 }
+
+.logo {
+  text-align: center;
+  margin: auto;
+}

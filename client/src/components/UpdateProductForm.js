@@ -9,31 +9,53 @@ import history from '../history';
 
 class UpdateProductForm extends Component {
     // idProduct, name, price, type and details
-    state = { ...this.props.location.state.product };
+    state = {
+        product: { ...this.props.location.state.product },
+        canUpdate: true
+    };
 
-    updateName = event => {
-        this.setState({ name: event.target.value });
+    updateName = ({ target: { value } }) => {
+        this.setState({ product: { ...this.state.product, name: value } });
     }
 
-    updateType = event => {
-        this.setState({ type: event.target.value });
+    updateType = ({ target: { value } }) => {
+        this.setState({ product: { ...this.state.product, type: value } });
     }
 
-    updatePrice = event => {
-        this.setState({ price: Number(event.target.value) });
+    updatePrice = ({ target: { value } }) => {
+        this.setState({ product: { ...this.state.product, price: Number(value) } });
     }
 
-    updateDetails = event => {
-        this.setState({ details: event.target.value });
+    updateDetails = ({ target: { value } }) => {
+        this.setState({ product: { ...this.state.product, details: value } });
     }
+
+    // When the component is rendered (i.e the state has changed), check if the product can be updated
+    // A product can be updated if all fields have been completed
+    componentDidUpdate() {
+        const { name, price, type, details } = this.state.product;
+
+        if (name.length && price > 0 && type.length && details.length) {
+            if(!this.state.canUpdate) {
+                this.setState({ canUpdate: true });
+            }
+            return;
+        }
+        else {
+            if(this.state.canUpdate) {
+                this.setState({ canUpdate: false });
+            }
+        }
+    }
+
 
 
     handleUpdate = () => {
 
         // fetch is used to interact with the API
-        fetch('http://localhost:8080/api/product/' + this.state.idProduct, {
+        fetch('http://localhost:8080/api/product/' + this.state.product.idProduct, {
             method: 'PUT',
-            body: JSON.stringify({ ...this.state }),
+            body: JSON.stringify(this.state.product),
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -60,7 +82,7 @@ class UpdateProductForm extends Component {
                                 <Form.Control
                                     type="text"
                                     placeholder="Macbook Pro 2019, Skateboard 8 inches..."
-                                    value={this.state.name}
+                                    value={this.state.product.name}
                                     onChange={this.updateName}
                                 />
                             </Col>
@@ -74,7 +96,7 @@ class UpdateProductForm extends Component {
                                 <Form.Control
                                     type="text"
                                     placeholder="Laptop, smartphone, book..."
-                                    value={this.state.type}
+                                    value={this.state.product.type}
                                     onChange={this.updateType}
                                 />
                             </Col>
@@ -88,7 +110,7 @@ class UpdateProductForm extends Component {
                                 <Form.Control
                                     type="text"
                                     placeholder="249.99"
-                                    value={this.state.price}
+                                    value={this.state.product.price}
                                     onChange={this.updatePrice}
                                 />
                             </Col>
@@ -103,14 +125,19 @@ class UpdateProductForm extends Component {
                                     type="text"
                                     as="textarea"
                                     placeholder="Scratched on the bottom, shipped within 48 hours, includes charger and adapter..."
-                                    value={this.state.details}
+                                    value={this.state.product.details}
                                     onChange={this.updateDetails}
                                 />
                             </Col>
                         </Form.Group>
                         <br />
                         <div className="submitBtn">
-                            <Button variant="success" onClick={this.handleUpdate} >Update</Button>
+                            <Button
+                                disabled={!this.state.canUpdate}
+                                variant="success"
+                                onClick={this.handleUpdate}>
+                                    Update
+                            </Button>
                         </div>
                     </Form>
                 </div>

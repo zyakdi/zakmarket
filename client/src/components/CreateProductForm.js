@@ -34,10 +34,8 @@ class CreateProductForm extends Component {
     // A product can be created if all fields have been completed
     componentDidUpdate() {
         const { name, price, type, details } = this.state.product;
-        console.log('wesh', name, price, type, details);
 
         if (name.length && price > 0 && type.length && details.length) {
-            console.log('excellent');
             if(!this.state.canCreate) {
                 this.setState({ canCreate: true });
             }
