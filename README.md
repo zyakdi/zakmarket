@@ -10,7 +10,9 @@ GET STARTED
 
 * Go to the api folder and start the API : cd api/ && npm start
 
-* Open a new tab, go back to the epsor-challenge folder and run the client-side application : cd client/ && npm start
+* Open a new tab, go back to the epsor-challenge folder and install the dependencies : cd client/ && npm i
+
+* Run the client-side application : npm start
 
 * Wait for the browser to open the web application or open your browser and go to : http://localhost:3000/
 
