@@ -1,6 +1,7 @@
+// Navigation bar of the website
+
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 

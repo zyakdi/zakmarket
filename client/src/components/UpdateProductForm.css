@@ -5,24 +5,13 @@
     text-align: center;
     width: 80%;
     margin: auto;
-    /* background-color: blanchedalmond; */
 }
 
 .gr {
-    /* background-color: blue; */
     justify-content: center;
     margin: auto;
 }
 
-.lbl {
-    /* background-color: cadetblue; */
-    /* margin: auto; */
-}
-
-.col {
-    /* background-color: chartreuse; */
-    /* margin: auto; */
-}
 
 .submitBtn > Button {
     width: 15%;

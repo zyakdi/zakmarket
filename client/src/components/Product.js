@@ -1,3 +1,5 @@
+// The ^roduct component is represented by 1 product displayed in the Products component
+
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

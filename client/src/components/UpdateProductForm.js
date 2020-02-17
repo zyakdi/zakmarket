@@ -1,20 +1,15 @@
+// This component is a form displayed when the user wants to update the informations of a product
+
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
-import { CardDeck, CardColumns, CardGroup, Form, Row, Col, Button } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import './UpdateProductForm.css';
 import history from '../history';
 
 
 class UpdateProductForm extends Component {
     // idProduct, name, price, type and details
-    state = {...this.props.location.state.product};
-
-    componentDidMount() {
-        console.log(this.props.location.state);
-        const { name, type, price, details, idProduct } = this.props.location.state.product;
-        // this.setState({ name, type, price, details, idProduct });
-    }
+    state = { ...this.props.location.state.product };
 
     updateName = event => {
         this.setState({ name: event.target.value });
@@ -36,7 +31,7 @@ class UpdateProductForm extends Component {
     handleUpdate = () => {
 
         // fetch is used to interact with the API
-        fetch('http://localhost:3000/api/product/'+this.state.idProduct, {
+        fetch('http://localhost:8080/api/product/' + this.state.idProduct, {
             method: 'PUT',
             body: JSON.stringify({ ...this.state }),
             headers: {

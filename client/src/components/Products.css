@@ -1,7 +1,6 @@
 .productsContainer {
     display: flex;
     width: 80%;
-    /* background-color: blue; */
     margin: auto;
     justify-content: space-evenly;
     flex-flow: row wrap;
@@ -9,13 +8,11 @@
 
 .flexItem {
     flex: 0 0 25em;
-    /* background-color: violet; */
     width: 20%;
 }
 
 .flexItem + .flexItem {
     margin-top: 20px;
-    /* margin-left: 20px; */
 }
 
 h2 {

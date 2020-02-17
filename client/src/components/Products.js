@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
 import Product from './Product';
-import { CardDeck, CardColumns, CardGroup, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './Products.css';
 
 
@@ -10,14 +10,14 @@ class Products extends Component {
     state = { products: [] };
 
     componentDidMount() {
-        fetch(`http://localhost:3000/api/product`)
+        fetch(`http://localhost:8080/api/product`)
             .then(response => response.json())
             .then(json => this.setState({ products: json }));
     }
 
     handleDelete = idProductToDel => {
         // Delete from the json database using the API
-        fetch('http://localhost:3000/api/product/' + idProductToDel, {
+        fetch('http://localhost:8080/api/product/' + idProductToDel, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

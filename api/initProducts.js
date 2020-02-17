@@ -1,8 +1,9 @@
+// Initialize the database with a few products.
+// To populate the database, go to api/ folder and type : npm initdb
+
 import { JsonDB } from 'node-json-db';
 import { Config } from 'node-json-db/dist/lib/JsonDBConfig';
 
-
-// Database configuration
 
 var db = new JsonDB(new Config("products", true, true, '/'));
 

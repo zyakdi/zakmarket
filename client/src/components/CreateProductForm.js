@@ -1,7 +1,9 @@
+// Form component displayed when the user wants to create a product
+
+
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
-import { CardDeck, CardColumns, CardGroup, Form, Row, Col, Button } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 import './UpdateProductForm.css';
 import history from '../history';
 
@@ -50,7 +52,7 @@ class CreateProductForm extends Component {
 
     handleCreate = () => {
         // fetch is used to interact with the API
-        fetch('http://localhost:3000/api/product/', {
+        fetch('http://localhost:8080/api/product/', {
             method: 'POST',
             body: JSON.stringify(this.state.product),
             headers: {
