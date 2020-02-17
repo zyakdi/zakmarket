@@ -2,90 +2,59 @@
     "products": [
         {
             "idProduct": 0,
-            "name": "Macbook Pro 13\"",
-            "price": 1.99,
+            "name": "Macbook Pro 13 inches",
+            "price": 1100,
             "type": "computer",
-            "size": "13 inches"
-        },
-        {
-            "idProduct": 1,
-            "name": "Hey bro",
-            "price": 22234456,
-            "type": "test type",
-            "wesh": 45,
-            "etc": "salut",
-            "details": "yes papa les détails"
-        },
-        {
-            "idProduct": 2,
-            "name": "Skateboard creature",
-            "price": 80,
-            "type": "Skateboard",
-            "details": "Damaged grip tape, spitfire wheels"
-        },
-        {
-            "idProduct": 3,
-            "name": "dracaufeu",
-            "price": 9999999,
-            "type": "Pokémon",
-            "prop1": "22222222222222222222222222222222222222222222222222",
-            "p2": "rr",
-            "p3": "33",
-            "pq": "pcq",
-            "details": "Dracaufeu niveau 100 EV max"
-        },
-        {
-            "name": "R",
-            "price": 45,
-            "type": "tqt",
-            "details": "jdshbvr475y465jgfv",
-            "idProduct": 4
+            "details": "Manufactured in 2019, Qwerty keyboard, touchbar"
         },
         {
             "name": "usb stick",
-            "price": 34,
-            "type": "223354364",
-            "details": "izi",
+            "price": 12,
+            "type": "hardware",
+            "details": "128Go storage, formatted in FAT32",
             "idProduct": 5
         },
         {
-            "name": "a",
-            "price": 5,
-            "type": "a",
-            "details": "etr",
-            "idProduct": 6
-        },
-        {
             "idProduct": 7,
-            "name": "dracaufeu",
-            "price": 9999999,
-            "type": "Pokémon",
-            "prop1": "22222222222222222222222222222222222222222222222222",
-            "p2": "rr",
-            "p3": "33",
-            "pq": "pcq",
-            "details": "Dracaufeu niveau 100 EV max"
+            "name": "Fender bass",
+            "price": 480,
+            "type": "instrument",
+            "details": "Blue Fender bass, 4 strings, shipped with jack connector"
         },
         {
-            "name": "R",
-            "price": 45,
-            "type": "tqt",
-            "details": "jdshbvr475y465jgfv",
-            "idProduct": 8
+            "idProduct": 1,
+            "name": "Benjamin Franklin by Walter Isaacson",
+            "price": 15.5,
+            "type": "book",
+            "details": "Paperback, 586 pages, very nice book"
         },
         {
-            "name": "usb stick",
-            "price": 34,
-            "type": "223354364",
-            "details": "izi",
-            "idProduct": 9
+            "idProduct": 2,
+            "name": "Skateboard 8 inches",
+            "price": 80,
+            "type": "Skateboard",
+            "details": "Damaged grip tape, spitfire wheels and Venture trucks"
         },
         {
-            "name": "a",
-            "price": 5,
-            "type": "a",
-            "details": "etr",
-            "idProduct": 10
+            "idProduct": 3,
+            "name": "Xiaomi Mi5",
+            "price": 79.99,
+            "type": "Smartphone",
+            "details": "64Go storage, manufactured in 2017"
+        },
+        {
+            "name": "Gucci sweatshirt",
+            "price": 340,
+            "type": "clothing",
+            "details": "Size S, worn a few times",
+            "idProduct": 4
+        },
+        {
+            "name": "Harmonica",
+            "price": 14.4,
+            "type": "instrument",
+            "details": "Hohner marine band in key of C",
+            "idProduct": 6
         }
     ]
 }

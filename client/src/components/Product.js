@@ -43,7 +43,7 @@ class Product extends Component {
                 <Card.Header className='productDesign'>{product.type.toUpperCase()}</Card.Header>
                 <Card.Body>
                     <Card.Title>{this.toFirstLetterUpperCase(product.name)}</Card.Title>
-                    <Card.Subtitle>{product.price}</Card.Subtitle>
+                    <Card.Subtitle>{product.price + " $"}</Card.Subtitle>
                     <Card.Text>
                         {this.productDetails}
                     </Card.Text>

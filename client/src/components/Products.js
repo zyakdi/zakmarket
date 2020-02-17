@@ -24,7 +24,7 @@ class Products extends Component {
             }
         }).then(response => response.json())
             .then(json => {
-                alert(json.message || json.type);
+                console.log(json.message || json.type);
             });
 
         // Delete from the state
@@ -52,17 +52,19 @@ class Products extends Component {
                 <h2>Our products</h2>
                 <br />
                 <div className="productsContainer">
-                    <CardDeck>
-                        {
-                            this.state.products.map((product) => (
-                                <Product
-                                    key={product.idProduct}
-                                    product={product}
-                                    handleDelete={this.handleDelete}
-                                />
-                            ))
-                        }
-                    </CardDeck>
+                    {
+                        this.state.products.map((product) => {
+                            return (
+                                <div className="flexItem">
+                                    <Product
+                                        key={product.idProduct}
+                                        product={product}
+                                        handleDelete={this.handleDelete}
+                                    />
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         );

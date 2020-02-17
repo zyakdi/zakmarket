@@ -58,7 +58,6 @@ class CreateProductForm extends Component {
             }
         }).then(response => response.json())
             .then(json => {
-                alert(json.message || json.type);
                 history.push('/products'); // Push the user to a Link
             });
     }
