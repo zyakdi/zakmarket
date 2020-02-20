@@ -11,7 +11,7 @@
     width: 20%;
 }
 
-.flexItem + .flexItem {
+.flexItem {
     margin-top: 20px;
 }
 
