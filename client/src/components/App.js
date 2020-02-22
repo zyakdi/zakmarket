@@ -41,9 +41,9 @@ function App() {
         </Card>
         <br />
         <br />
-        <div className="viewProductsBtn">
+        <div className="viewProductsDiv">
           <Link to="/products">
-            <Button className='homeBtn'>
+            <Button className='viewProductsBtn'>
               See our products
           </Button>
           </Link>

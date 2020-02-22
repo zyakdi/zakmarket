@@ -3,7 +3,7 @@
         {
             "idProduct": 0,
             "name": "Macbook Pro 13 inches",
-            "price": 1100,
+            "price": 4555505846,
             "type": "computer",
             "details": "Manufactured in 2019, Qwerty keyboard"
         },
@@ -27,6 +27,13 @@
             "price": 15.5,
             "type": "book",
             "details": "Paperback, 586 pages, very nice book"
+        },
+        {
+            "name": "Water bottle",
+            "price": 23,
+            "type": "Material",
+            "details": "Green bottle",
+            "idProduct": 8
         },
         {
             "idProduct": 2,

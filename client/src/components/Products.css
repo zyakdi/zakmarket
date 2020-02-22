@@ -25,4 +25,8 @@ h2 {
 .createProductBtn {
     background-color: rgb(51, 99, 51);
     border: none;
-  }
+}
+
+.createProductBtn:hover {
+    background-color: rgb(11, 71, 11);
+}

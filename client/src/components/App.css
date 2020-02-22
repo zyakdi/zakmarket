@@ -26,9 +26,13 @@ h1 {
   text-align: justify;
 }
 
-.homeBtn {
+.viewProductsBtn {
   background-color: rgb(51, 99, 51);
   border: none;
+}
+
+.viewProductsBtn:hover {
+  background-color: rgb(11, 71, 11);
 }
 
 .logo {
