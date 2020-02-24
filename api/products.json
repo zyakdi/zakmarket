@@ -3,23 +3,9 @@
         {
             "idProduct": 0,
             "name": "Macbook Pro 13 inches",
-            "price": 4555505846,
+            "price": 1100,
             "type": "computer",
-            "details": "Manufactured in 2019, Qwerty keyboard"
-        },
-        {
-            "name": "usb stick",
-            "price": 12,
-            "type": "hardware",
-            "details": "128Go storage, formatted in FAT32",
-            "idProduct": 5
-        },
-        {
-            "idProduct": 7,
-            "name": "Fender bass",
-            "price": 480,
-            "type": "instrument",
-            "details": "Blue Fender bass, 4 strings, shipped with jack connector"
+            "details": "Manufactured in 2019, Qwerty keyboard, touchbar"
         },
         {
             "idProduct": 1,
@@ -27,13 +13,6 @@
             "price": 15.5,
             "type": "book",
             "details": "Paperback, 586 pages, very nice book"
-        },
-        {
-            "name": "Water bottle",
-            "price": 23,
-            "type": "Material",
-            "details": "Green bottle",
-            "idProduct": 8
         },
         {
             "idProduct": 2,
@@ -57,11 +36,25 @@
             "idProduct": 4
         },
         {
+            "name": "usb stick",
+            "price": 12,
+            "type": "hardware",
+            "details": "128Go storage, formatted in FAT32",
+            "idProduct": 5
+        },
+        {
             "name": "Harmonica",
             "price": 14.4,
             "type": "instrument",
             "details": "Hohner marine band in key of C",
             "idProduct": 6
+        },
+        {
+            "idProduct": 7,
+            "name": "Fender bass",
+            "price": 480,
+            "type": "instrument",
+            "details": "Blue Fender bass, 4 strings, shipped with jack connector"
         }
     ]
 }

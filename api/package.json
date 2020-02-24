@@ -4,14 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "nodemon server.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --exec babel-node",
-    "initdb": "node initProducts.js"
+    "start": "node -r esm server.js",
+    "initdb": "node -r esm initProducts.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "history": "^4.10.1",
     "node-json-db": "^1.0.3",
