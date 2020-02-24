@@ -2,8 +2,10 @@
 
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import './Product.css';
+import history from '../history';
+
 
 
 
@@ -29,7 +31,7 @@ class Product extends Component {
                         return (
                             <span key={index}>
                                 {this.toFirstLetterUpperCase(key) + ': ' + product[key]}
-                                <br/>
+                                <br />
                             </span>
                         )
                     })
@@ -53,9 +55,13 @@ class Product extends Component {
                 <Card.Footer className='productDesign'>
                     <div className="cardFooter">
                         <div className="footerBtn">
-                            <Link to={{ pathname: '/updateProduct', state: { product } }}>
-                                <Button variant="secondary">Update</Button>
-                            </Link>{' '}
+                            <BrowserRouter>
+                                <Link 
+                                    to={{ pathname: '/updateProduct', state: { product } }}
+                                    onClick={() => history.push('/updateProduct')}>
+                                    <Button variant="secondary">Update</Button>
+                                </Link>
+                            </BrowserRouter>
                         </div>
                         <div className="footerBtn">
                             <Button onClick={() => this.props.handleDelete(product.idProduct)} variant="danger">Delete</Button>

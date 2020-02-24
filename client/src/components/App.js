@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import NavigationBar from './NavigationBar';
 import { Card } from 'react-bootstrap';
 import logo from '../tree-logo.png';
+import history from '../history';
 
 
 function App() {
@@ -35,18 +36,24 @@ function App() {
           <Card.Header className="cardHeader">Want to sell your product ?</Card.Header>
           <Card.Body>
             <Card.Text>
-              <Link to="/createProduct">Start by creating a product here.</Link>
+              <BrowserRouter>
+                <Link to="/createProduct" onClick={() => history.push('/createProduct')}>
+                  Start by creating a product here.
+                </Link>
+              </BrowserRouter>
             </Card.Text>
           </Card.Body>
         </Card>
         <br />
         <br />
         <div className="viewProductsDiv">
-          <Link to="/products">
-            <Button className='viewProductsBtn'>
-              See our products
-          </Button>
-          </Link>
+          <BrowserRouter>
+            <Link to="/products" onClick={() => history.push('/products')}>
+              <Button className='viewProductsBtn'>
+                See our products
+              </Button>
+            </Link>
+          </BrowserRouter>
         </div>
         <br />
         <br />

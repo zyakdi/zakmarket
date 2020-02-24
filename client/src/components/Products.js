@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
 import Product from './Product';
 import { Button } from 'react-bootstrap';
 import './Products.css';
+import history from '../history';
 
 
 class Products extends Component {
@@ -12,7 +13,10 @@ class Products extends Component {
     componentDidMount() {
         fetch(`http://localhost:8080/api/product`)
             .then(response => response.json())
-            .then(json => this.setState({ products: json }));
+            .then(json => this.setState({ products: json }))
+            .catch(error => {
+                console.error(error);
+            });
     }
 
     handleDelete = idProductToDel => {
@@ -25,6 +29,9 @@ class Products extends Component {
         }).then(response => response.json())
             .then(json => {
                 console.log(json.message || json.type);
+            })
+            .catch(error => {
+                console.error(error);
             });
 
         // Delete from the state
@@ -44,9 +51,11 @@ class Products extends Component {
                 <NavigationBar />
                 <br />
                 <div className="createProductDiv">
-                    <Link to='/createProduct'>
-                        <Button className="createProductBtn">Create a new product</Button>
-                    </Link>
+                    <BrowserRouter>
+                        <Link to='/createProduct' onClick={() => history.push('/createProduct')}>
+                            <Button className="createProductBtn">Create a new product</Button>
+                        </Link>
+                    </BrowserRouter>
                 </div>
                 <br />
                 <h2>Our products</h2>
