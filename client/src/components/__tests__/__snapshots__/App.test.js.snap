@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders 1`] = `
+<div>
+  <div
+    className="navigationBar"
+  >
+    <nav
+      className="navbar navbar-expand-lg navbar-dark"
+    >
+      <a
+        className="navbar-brand"
+        href="/"
+      >
+        Zak-Market
+      </a>
+      <button
+        aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="basic-navbar-nav"
+      >
+        <div
+          className="mr-auto navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <a
+            className="nav-link"
+            data-rb-event-key="/"
+            href="/"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            Home
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="/products"
+            href="/products"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            Products
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="/createProduct"
+            href="/createProduct"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            Create a product
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div
+    className="home"
+  >
+    <br />
+    <br />
+    <img
+      alt="Tree logo"
+      className="logo"
+      height="200"
+      src="tree-logo.png"
+      width="200"
+    />
+    <h1>
+      Zak-Market
+    </h1>
+    <h2>
+      A marketplace for the planet
+    </h2>
+    <br />
+    <br />
+    <div
+      className="homeCard card border-dark"
+    >
+      <div
+        className="cardHeader card-header"
+      >
+        <span
+          className=""
+        >
+          Our mission
+        </span>
+      </div>
+      <div
+        className="card-body"
+      >
+        <p
+          className="cardText card-text"
+        >
+          Provide a friendly place to buy and sell products between individuals. We believe second hand products are a solution to reduce our ecological impact by preventing overproduction of packaging.
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div
+      className="homeCard card border-dark"
+    >
+      <div
+        className="cardHeader card-header"
+      >
+        Want to sell your product ?
+      </div>
+      <div
+        className="card-body"
+      >
+        <p
+          className="card-text"
+        >
+          <a
+            href="/createProduct"
+            onClick={[Function]}
+          >
+            Start by creating a product here.
+          </a>
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div
+      className="viewProductsDiv"
+    >
+      <a
+        href="/products"
+        onClick={[Function]}
+      >
+        <button
+          className="viewProductsBtn btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          See our products
+        </button>
+      </a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
+`;

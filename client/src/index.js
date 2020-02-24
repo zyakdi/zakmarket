@@ -11,6 +11,7 @@ import Products from './components/Products';
 import CreateProductForm from './components/CreateProductForm';
 import UpdateProductForm from './components/UpdateProductForm';
 
+// Router component can only have one child, hence the Switch component
 ReactDOM.render(
     <Router history={history}>
         <Switch>

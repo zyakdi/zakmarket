@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product snapshot renders 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="productDesign card-header"
+  >
+    TEST
+  </div>
+  <div
+    className="cardBody card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      Test product
+    </div>
+    <div
+      className="card-subtitle h6"
+    >
+      22 $
+    </div>
+    <p
+      className="card-text"
+    >
+      <span
+        className="productDetails"
+      >
+        <span>
+          Details: Details of the test product
+          <br />
+        </span>
+      </span>
+    </p>
+  </div>
+  <div
+    className="productDesign card-footer"
+  >
+    <div
+      className="cardFooter"
+    >
+      <div
+        className="footerBtn"
+      >
+        <a
+          href="/updateProduct"
+          onClick={[Function]}
+        >
+          <button
+            className="btn btn-secondary"
+            disabled={false}
+            type="button"
+          >
+            Update
+          </button>
+        </a>
+      </div>
+      <div
+        className="footerBtn"
+      >
+        <button
+          className="btn btn-danger"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
