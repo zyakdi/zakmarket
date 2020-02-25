@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import { Link, BrowserRouter } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import NavigationBar from './NavigationBar';
+import NavigationBar from '../NavigationBar';
 import { Card } from 'react-bootstrap';
-import logo from '../tree-logo.png';
-import history from '../history';
+import logo from '../../assets/tree-logo.png';
+import history from '../../history';
 
 
 function App() {

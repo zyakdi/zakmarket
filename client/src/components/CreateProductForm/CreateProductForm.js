@@ -2,10 +2,10 @@
 
 
 import React, { Component } from 'react';
-import NavigationBar from './NavigationBar';
+import NavigationBar from '../NavigationBar';
 import { Form, Row, Col, Button } from 'react-bootstrap';
-import './UpdateProductForm.css';
-import history from '../history';
+import './CreateProductForm.css';
+import history from '../../history';
 
 
 class CreateProductForm extends Component {

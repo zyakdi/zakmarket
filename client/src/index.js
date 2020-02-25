@@ -7,9 +7,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import history from './history';
 
 import App from './components/App';
-import Products from './components/Products';
+import Products from './components/Products/';
 import CreateProductForm from './components/CreateProductForm';
-import UpdateProductForm from './components/UpdateProductForm';
+import UpdateProductForm from './components/UpdateProductForm/UpdateProductForm';
 
 // Router component can only have one child, hence the Switch component
 ReactDOM.render(

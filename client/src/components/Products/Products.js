@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
-import NavigationBar from './NavigationBar';
-import Product from './Product';
+import NavigationBar from '../NavigationBar/NavigationBar';
+import Product from '../Product';
 import { Button } from 'react-bootstrap';
 import './Products.css';
-import history from '../history';
+import history from '../../history';
 
 
 class Products extends Component {

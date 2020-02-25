@@ -1,10 +1,10 @@
 // This component is a form displayed when the user wants to update the informations of a product
 
 import React, { Component } from 'react';
-import NavigationBar from './NavigationBar';
+import NavigationBar from '../NavigationBar/NavigationBar';
 import { Form, Row, Col, Button } from 'react-bootstrap';
 import './UpdateProductForm.css';
-import history from '../history';
+import history from '../../history';
 
 
 class UpdateProductForm extends Component {

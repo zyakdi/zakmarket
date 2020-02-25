@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link, BrowserRouter } from 'react-router-dom';
 import './Product.css';
-import history from '../history';
+import history from '../../history';
 
 
 
