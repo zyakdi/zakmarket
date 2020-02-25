@@ -4,7 +4,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './NavigationBar.css';
 
-const navigationBar = () => {
+const NavigationBar = () => {
     return (
         <div className="navigationBar">
             <Navbar expand="lg" variant="dark">
@@ -22,4 +22,4 @@ const navigationBar = () => {
     )
 }
 
-export default navigationBar;
+export default NavigationBar;

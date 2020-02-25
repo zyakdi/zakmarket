@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Product from '../Product';
+import Product from '../../Product/Product';
 
 describe('Product', () => {
   const product = {

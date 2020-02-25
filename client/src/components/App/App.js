@@ -8,7 +8,7 @@ import logo from '../../assets/tree-logo.png';
 import history from '../../history';
 
 
-function App() {
+const App = () => {
   return (
     <div>
       <NavigationBar />
