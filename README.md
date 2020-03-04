@@ -1,7 +1,3 @@
-Welcome to the Epsor Challenge project !
-
-Project specs given by : Epsor
-
 Project code developed by : Zakaria Yakdi
 
 GET STARTED
